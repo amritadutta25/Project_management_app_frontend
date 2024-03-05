@@ -8,11 +8,11 @@ import { deleteTaskAction } from './actions'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />}>
-      <Route path="" element={<Landing />} loader={projectsLoader} />
-      <Route path="projects/:id" element={<ProjectShow />} loader={projectLoader} />
-      <Route path="projects/tasks/:id" element={<TaskShow />} loader={taskLoader} />
-      <Route path="projects/:projectId/tasks/delete/:taskId" action={deleteTaskAction} />
+    <Route path='/' element={<App />}>
+      <Route path='' element={<Landing />} loader={projectsLoader} />
+      <Route path='projects/:id' element={<ProjectShow />} loader={projectLoader} />
+      <Route path='projects/tasks/:id' element={<TaskShow />} loader={taskLoader} />
+      <Route path='projects/:projectId/tasks/delete/:taskId' action={deleteTaskAction} />
     </Route>
   )
 )
